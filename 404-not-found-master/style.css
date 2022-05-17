@@ -1,6 +1,8 @@
 .heading {
   font-family: "Inconsolata", sans-serif;
   padding-left: 40px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 img {
@@ -9,11 +11,16 @@ img {
 }
 
 .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   margin: 20px 0;
-  padding-top: 30px;
+  padding-top: 20px;
   display: flex;
   justify-content: space-evenly;
   gap: 70px;
+  padding-bottom: 10px;
 }
 
 .content {
@@ -44,7 +51,69 @@ h1 {
 button {
   background-color: black;
   width: 200px;
-  height: 70px;
+  height: 50px;
   color: white;
   font-family: "Space Mono", monospace;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    padding-left: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 48px;
+    letter-spacing: -0.035em;
+    padding: 0;
+    margin: 0;
+    font-family: "Space Mono", monospace;
+    font-style: normal;
+    width: 100%;
+  }
+
+  .heading {
+    padding-left: 10px;
+  }
+
+  .text {
+    padding-top: 30px;
+    font-size: 18px;
+    line-height: 24px;
+    width: 80%;
+    margin-bottom: 36px;
+  }
+
+  img {
+    width: 80%;
+    height: 300px;
+  }
+
+  button {
+    margin-top: 40px;
+    margin-left: 20px;
+    width: 40%;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #bdbdbd;
+}
+
+#dev {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #bdbdbd;
+  text-decoration: none;
 }
