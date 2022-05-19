@@ -50,3 +50,20 @@
   font-size: 18px;
   line-height: 27px;
 }
+
+img {
+  height: 400px;
+  padding: 0 10px;
+}
+
+.content {
+  height: 500px;
+  width: 80%;
+  margin: 30px auto 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.second-img {
+  align-self: flex-end;
+}
