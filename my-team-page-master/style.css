@@ -1,69 +1,112 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  background: #fafafa;
 }
 
-.header {
-  display: flex;
+h1 {
+  font-family: "PT Serif", sans-serif;
   width: 100%;
-  justify-content: space-around;
-  margin-top: 30px;
-}
-
-.header .heading {
-  width: 278px;
-  height: 47px;
-  left: 243px;
-
-  font-family: "PT Serif";
-  font-style: normal;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 48px;
-  letter-spacing: -0.045em;
+  font-size: 2.5rem;
+  letter-spacing: -0.04em;
+  margin-bottom: 2.5rem;
 }
 
-.header .heading-content-head {
-  width: 117px;
-  height: 27px;
-  left: 736px;
-  margin-top: 10px;
-  font-family: "Poppins";
-  font-style: normal;
+h3 {
+  text-transform: uppercase;
   font-weight: 600;
-  font-size: 18px;
-  line-height: 27px;
-  align-self: flex-end;
-  margin-bottom: 10px;
+  font-size: 1.29rem;
+  margin-bottom: 0.7rem;
 }
 
-.header .heading-content-body {
-  width: 439px;
-  height: 87px;
-  left: 736px;
-  top: 147px;
-
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 27px;
-}
-
-img {
-  height: 400px;
-  padding: 0 10px;
-}
-
-.content {
-  height: 500px;
-  width: 80%;
-  margin: 30px auto 0 auto;
+.header-container {
   display: flex;
-  justify-content: space-around;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
 }
 
-.second-img {
-  align-self: flex-end;
+.header-text {
+  width: 100%;
+  height: 200px;
+}
+
+.header-subtext {
+  font-size: 1rem;
+  font-weight: 400;
+  width: 85%;
+}
+
+section {
+  position: relative;
+  max-width: 240px;
+  width: 42%;
+  margin: 0 1rem 0.7rem 0;
+}
+img {
+  width: 100%;
+}
+
+span {
+  font-family: "PT Serif";
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 400;
+  white-space: nowrap;
+  position: absolute;
+  margin-left: 1.2rem;
+  transform-origin: 0 0;
+  transform: rotate(90deg);
+}
+
+.img-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.member-name {
+  font-weight: 600px;
+  font-size: 1rem;
+  margin-top: 0.2rem;
+}
+
+footer {
+  margin-top: 2rem;
+  font-weight: 500px;
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 640px) {
+  body {
+    padding: 7.75rem 1.3rem 2.1rem 1.3rem;
+  }
+  .img-container {
+    flex-direction: row;
+  }
+  .header-subtext {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .img-container .member:nth-child(even) {
+    margin-top: 3.4rem;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .img-container .member:nth-child(3n + 2) {
+    margin-top: 7rem;
+  }
 }
